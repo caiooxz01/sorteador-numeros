@@ -8,6 +8,12 @@ function sortear() {
         return;
     }
 
+    let intervalo = ate - de + 1;
+    if (quantidade > intervalo) {
+        alert(`Quantidade de números a serem sorteados não pode ser maior que o intervalo "de" a "até"`);
+        return;
+    }
+
     let sorteados = [];
     let numero;
 
